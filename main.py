@@ -22,7 +22,7 @@ root.title("Калькулятор ІМТ")
 root.geometry("300x250")
 root.configure(bg="white")
 
-calc_button = tk.Button(root, text="Розрахувати", command=calculate_bmi)
+calc_button = tk.Button(root, text="Обчислити", command=calculate_bmi)
 calc_button.pack(pady=10)
 
 tk.Label(root, text="Вага:", bg="white").pack(pady=5)
