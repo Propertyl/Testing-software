@@ -18,7 +18,7 @@ def calculate_bmi():
 
 
 root = tk.Tk()
-root.title("Калькулятор ІМТ")
+root.title("Калькулятор imt")
 root.geometry("300x250")
 root.configure(bg="white")
 
