@@ -12,7 +12,9 @@ def calculate_bmi():
 
        if bmi < 18.5:
            category = "Недостатня вага"
-       elif bmi > 25:
+       elif 18.5 <= bmi <= 25:
+           category = "Нормальна вага"
+       else:
            category = "Надмірна вага"
 
        result_label.config(text=f"Ваш ІМТ: {bmi:.1f}\nКатегорія: {category}")
