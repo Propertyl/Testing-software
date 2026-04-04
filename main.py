@@ -34,7 +34,7 @@ entry_height.pack(pady=5)
 calc_button = tk.Button(root, text="Обчислити", command=calculate_bmi)
 calc_button.pack(pady=10)
 
-result_label = tk.Label(root, text="Ваш прекрасний результат", fg="#f0f0f0", bg="white", font=("Arial", 10))
+result_label = tk.Label(root, text="Ваш прекрасний результат", fg="#000000", bg="white", font=("Arial", 10))
 result_label.pack(pady=15)
 
 root.mainloop()
