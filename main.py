@@ -8,7 +8,7 @@ def calculate_bmi():
 
        height_m = height_cm / 100
 
-       bmi = weight / height_m
+       bmi = weight / (height_m ** 2)
 
        if bmi < 18.5:
            category = "Недостатня вага"
