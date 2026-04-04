@@ -25,11 +25,11 @@ root.configure(bg="white")
 calc_button = tk.Button(root, text="Обчислити", command=calculate_bmi)
 calc_button.pack(pady=10)
 
-tk.Label(root, text="Вага:", bg="white").pack(pady=5)
+tk.Label(root, text="Вага (кг):", bg="white").pack(pady=5)
 entry_weight = tk.Entry(root)
 entry_weight.pack(pady=5)
 
-tk.Label(root, text="Зріст:", bg="white").pack(pady=5)
+tk.Label(root, text="Зріст (см):", bg="white").pack(pady=5)
 entry_height = tk.Entry(root)
 entry_height.pack(pady=5)
 
