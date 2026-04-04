@@ -1,20 +1,23 @@
 import tkinter as tk
-
+from tkinter import messagebox
 
 def calculate_bmi():
-    weight = float(entry_weight.get())
-    height_cm = float(entry_height.get())
+   try:
+       weight = float(entry_weight.get())
+       height_cm = float(entry_height.get())
 
-    height_m = height_cm / 100
+       height_m = height_cm / 100
 
-    bmi = weight / height_m
+       bmi = weight / height_m
 
-    if bmi < 18.5:
-        category = "Недостатня вага"
-    elif bmi > 25:
-        category = "Надмірна вага"
+       if bmi < 18.5:
+           category = "Недостатня вага"
+       elif bmi > 25:
+           category = "Надмірна вага"
 
-    result_label.config(text=f"Ваш ІМТ: {bmi:.1f}\nКатегорія: {category}")
+       result_label.config(text=f"Ваш ІМТ: {bmi:.1f}\nКатегорія: {category}")
+   except ValueError:
+       messagebox.showerror("Помилка", "Будь ласка, введіть коректні числові значення!")
 
 
 root = tk.Tk()
