@@ -1,6 +1,6 @@
 from main import get_bmi_category
 
-def run_assert_tests():
+def test_bmi_logic():
     print("Запуск тестів з використанням assert...")
 
     bmi, cat = get_bmi_category(75, 180)
