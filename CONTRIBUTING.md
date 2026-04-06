@@ -1,4 +1,4 @@
-```markdown
+
 # 👩‍💻 Правила розробки (Contributing Guidelines)
 
 Дякуємо, що вирішили допомогти покращити Калькулятор ІМТ! Ось короткий посібник про те, як почати.
@@ -13,10 +13,10 @@
 ## 🧪 Вимоги до тестування
 Ваші зміни не повинні ламати існуючий функціонал. Обов'язково запускайте тести перед відправкою:
 
-```bash
 # Запуск усіх тестів pytest
 pytest
 
 # Запуск тестів unittest
 python -m unittest test_bmi.py
+
 <img width="1288" height="259" alt="image" src="https://github.com/user-attachments/assets/e74db368-87c8-4575-9201-37f6695ec5eb" />
